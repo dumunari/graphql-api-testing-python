@@ -1,0 +1,6 @@
+*.iml
+.idea/
+venv/
+tests/resources/commons/__pycache__/
+tests/resources/__pycache__/
+__pycache__/
