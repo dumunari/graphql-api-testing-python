@@ -1,5 +1,6 @@
 from behave import *
 from tests.resources import breed_resource
+from features.steps.commons import common_steps
 
 
 @given('user wants to add {breed_name} breed')

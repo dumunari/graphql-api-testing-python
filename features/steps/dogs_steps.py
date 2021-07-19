@@ -1,5 +1,5 @@
 from behave import *
-from features.steps.common import common_steps
+from features.steps.commons import common_steps
 from tests.resources import dog_resource
 
 
@@ -33,6 +33,6 @@ def should_return_parents_id(context, first_parent_id, second_parent_id):
     dog_resource.assert_add_puppy_to_parents_mutation_response_ids(first_parent_id, second_parent_id)
 
 
-@then(u'parents name {first_parent_name} and {second_parent_name}')
+@then('parents name {first_parent_name} and {second_parent_name}')
 def and_parents_name(context, first_parent_name, second_parent_name):
     dog_resource.assert_add_puppy_to_parents_mutation_response_names(first_parent_name, second_parent_name)

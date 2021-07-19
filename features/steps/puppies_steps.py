@@ -1,5 +1,5 @@
 from behave import *
-from features.steps.common import common_steps
+from features.steps.commons import common_steps
 from tests.resources import puppy_resource
 
 
