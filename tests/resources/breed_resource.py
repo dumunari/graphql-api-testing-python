@@ -26,4 +26,4 @@ def __query_breeds():
 
 
 def __create_breed_mutation(breed_name):
-    return "mutation {{ createBreed ( input: {{ name: {breed_name} }}) {{ id name }} }}".format(breed_name=breed_name)
+    return f"mutation {{ createBreed ( input: {{ name: {breed_name} }}) {{ id name }} }}"

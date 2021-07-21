@@ -40,10 +40,8 @@ def __query_dogs():
 
 
 def __create_dog_mutation(dog_name, dog_age, breed_id):
-    return "mutation {{ createDog(input: {{ name: {dog_name} age: {dog_age}, breedId: {breed_id} }}) {{ name age }} }}"\
-                .format(dog_name=dog_name, dog_age=dog_age, breed_id=breed_id)
+    return f"mutation {{ createDog(input: {{ name: {dog_name} age: {dog_age}, breedId: {breed_id} }}) {{ name age }} }}"
 
 
 def __add_puppy_to_parents_mutation(puppy_id, first_parent_id, second_parent_id):
-    return "mutation {{ addPuppyToParents(input: {{ puppyId: {puppy_id}  parentsId: [{first_parent_id}, {second_parent_id}], }}) {{ id name }} }}" \
-                .format(puppy_id=puppy_id, first_parent_id=first_parent_id, second_parent_id=second_parent_id)
+    return f"mutation {{ addPuppyToParents(input: {{ puppyId: {puppy_id}  parentsId: [{first_parent_id}, {second_parent_id}], }}) {{ id name }} }}"
